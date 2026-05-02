@@ -1,0 +1,148 @@
+<!DOCTYPE internal html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Cosmetics | Glow Naturally</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Aura Cosmetics</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Shop</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="cart-icon" id="cart-icon">
+            🛒 <span class="cart-count" id="cart-count">0</span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Embrace Your Natural Glow</h1>
+            <p>Discover our premium collection of clean, sustainable cosmetics designed to enhance your unique beauty.</p>
+            <a href="#products" class="btn primary-btn">Shop the Collection</a>
+        </div>
+    </header>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+        <div class="section-header">
+            <h2>Our Bestsellers</h2>
+            <p>Elevate your daily routine with our most loved essentials.</p>
+        </div>
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card" data-id="1">
+                <div class="product-img-wrapper">
+                    <img src="images/lipstick.png" alt="Velvet Rose Lipstick">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Velvet Rose Lipstick</h3>
+                    <p class="product-price">$24.00</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card" data-id="2">
+                <div class="product-img-wrapper">
+                    <img src="images/foundation.png" alt="Luminous Foundation">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Luminous Foundation</h3>
+                    <p class="product-price">$42.00</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card" data-id="3">
+                <div class="product-img-wrapper">
+                    <img src="images/serum.png" alt="Radiance C Serum">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Radiance C Serum</h3>
+                    <p class="product-price">$58.00</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card" data-id="4">
+                <div class="product-img-wrapper">
+                    <img src="images/eyeshadow.png" alt="Dusk to Dawn Palette">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Dusk to Dawn Palette</h3>
+                    <p class="product-price">$36.00</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-header">
+            <h2>Get in Touch</h2>
+            <p>Have questions? We'd love to hear from you.</p>
+        </div>
+        <form class="contact-form" id="contact-form">
+            <div class="form-group">
+                <input type="text" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn primary-btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Aura Cosmetics. All rights reserved.</p>
+    </footer>
+
+    <!-- Cart Overlay & Sidebar -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" id="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be dynamically injected here -->
+            <div class="empty-cart-msg" id="empty-cart-msg">Your cart is empty.</div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-price">$0.00</span>
+            </div>
+            <button class="btn checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        window.embeddedChatbotConfig = {
+            chatbotId: "4pJyZOFWwH_WpOn8gSEm4",
+            domain: "www.chatbase.co"
+        }
+    </script>
+    <script
+        src="https://www.chatbase.co/embed.min.js"
+        chatbotId="4pJyZOFWwH_WpOn8gSEm4"
+        domain="www.chatbase.co"
+        defer>
+    </script>
+</body>
+</html>
